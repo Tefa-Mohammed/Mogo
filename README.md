@@ -1,0 +1,2 @@
+# Mogo
+Single Web Page

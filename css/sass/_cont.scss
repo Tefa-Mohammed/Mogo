@@ -1,0 +1,38 @@
+* {
+  @include prefixer(box-sizing, border-box, webkit moz o);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: {
+    family: Tahoma;
+    size: 16px;
+  }
+}
+
+.cont {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  @media #{$minsmall} {
+    width: 750px;
+  }
+  @media #{$minmedium} {
+    width: 970px;
+  }
+  @media #{$minlarge} {
+    width: 100%;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+.text-center-xs {
+  @media #{$maxmobile} {
+    text-align: center;
+  }
+}

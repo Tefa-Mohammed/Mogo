@@ -1,0 +1,23 @@
+* {
+  @include prefixer(box-sizing, border-box, webkit moz o);
+  @include prefixer(scroll-behavior, smooth, webkit moz o);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: {
+    family: Tahoma;
+    size: 16px;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.text-center-xs {
+  @media #{$maxmobile} {
+    text-align: center;
+  }
+}
